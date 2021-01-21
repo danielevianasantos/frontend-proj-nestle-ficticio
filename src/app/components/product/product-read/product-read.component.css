@@ -1,0 +1,29 @@
+button {
+    margin: 10px 10px 10px 50px;
+    background-color: rgb(107, 164, 187);
+    color: white;
+}
+table {
+    background: linear-gradient(rgb(180, 214, 228),transparent);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+th {
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+}
+td {
+    min-width: 5rem;
+}
+.edit {
+    margin-right: 10px;
+}
+.edit >i {
+    color: #2674d9;
+}
+.delete >i {
+    color: #d35ee3;
+}
+.fileEntry {
+    background-color: rgb(207, 233, 240);
+}

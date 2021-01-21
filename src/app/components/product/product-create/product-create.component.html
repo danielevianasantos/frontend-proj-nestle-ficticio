@@ -1,0 +1,70 @@
+<mat-card class="provider-form-container">
+  <legend>CADASTRO DE PRODUTOS</legend>
+  <mat-card-title class="spacefileds"> Nome </mat-card-title>
+  <form>
+    <mat-form-field appearance="fill">
+      <input
+        matInput
+        placeholder="ex: Maçã"
+        [(ngModel)]="product.nome"
+        name="nome"
+      />
+    </mat-form-field>
+  </form>
+  <mat-card-title class="spacefileds"> Preço </mat-card-title>
+  <form>
+    <mat-form-field appearance="fill">
+      <input type="number" matInput [(ngModel)]="product.preco" name="preco" />
+    </mat-form-field>
+  </form>
+  <mat-card-title class="spacefileds"> Unidades por Caixa </mat-card-title>
+  <form>
+    <mat-form-field appearance="fill">
+      <input
+        type="number"
+        matInput
+        [(ngModel)]="product.unidadePorCaixa"
+        name="unidadePorCaixa"
+      />
+    </mat-form-field>
+  </form>
+  <mat-card-title class="spacefileds"> Peso por Unidade </mat-card-title>
+  <form>
+    <mat-form-field appearance="fill">
+      <input
+        type="number"
+        matInput
+        [(ngModel)]="product.pesoPorUnidade"
+        name="pesoPorUnidade"
+      />
+    </mat-form-field>
+  </form>
+  <mat-card-title class="spacefileds"> Validade </mat-card-title>
+  <form>
+    <mat-form-field appearance="fill">
+      <input
+        type="date"
+        matInput
+        [(ngModel)]="product.validade"
+        name="validade"
+      />
+    </mat-form-field>
+  </form>
+  <mat-card-title class="spacefileds">
+    Id da Categoria do Produto
+  </mat-card-title>
+  <form>
+    <mat-form-field appearance="fill">
+      <input
+        matInput
+        placeholder="ex: ASAFCVSAV"
+        [(ngModel)]="product.categoriaProdutoId"
+        name="categoriaProdutoId"
+      />
+    </mat-form-field>
+  </form>
+
+  <button mat-raised-button (click)="createProduct()">Salvar</button>
+
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>

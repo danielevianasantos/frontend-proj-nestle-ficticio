@@ -1,0 +1,17 @@
+.conteiner {
+    position: fixed;
+}
+.sidenav {
+    background-color: rgb(14, 144, 204);
+    overflow: hidden;
+}
+.sidenav a{
+    color:white
+}
+.sidenav i{
+    padding-right: 10px;
+}
+.content {
+    padding: 16px;
+    height: 90vh;
+}

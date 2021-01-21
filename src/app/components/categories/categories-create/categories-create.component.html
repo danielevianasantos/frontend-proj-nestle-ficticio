@@ -1,0 +1,29 @@
+<mat-card class="provider-form-container" class="mat-elevation-z12">
+    <form><legend >CADASTRO DE CATEGORIA DE PRODUTO</legend>
+      <mat-card-title class="spacefileds"> Nome </mat-card-title>
+
+      <mat-form-field appearance="fill">
+        <input
+          matInput
+          placeholder="ex: Fruta"
+          [(ngModel)]="category.nome"
+          name="nome"
+        />
+      </mat-form-field>
+
+      <mat-card-title class="spacefileds"> Id do Fornecedor</mat-card-title>
+
+      <mat-form-field appearance="fill">
+        <input
+          matInput
+          placeholder="ex: ASAFCVSAV"
+          [(ngModel)]="category.fornecedorId"
+          name="razaoSocail"
+        />
+      </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createCategory()">Salvar</button>
+
+    <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>

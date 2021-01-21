@@ -1,0 +1,68 @@
+<fieldset>
+    <legend>Atualização de Cadastro de Produto</legend>
+    <div class="provider-form-container">
+    <mat-card>
+        <mat-card-title >
+            Nome
+        </mat-card-title>
+        <form>
+                <mat-form-field appearance="fill">
+                <input matInput placeholder="ex: Maçã" [(ngModel)]="produto.nome" name="nome">
+                </mat-form-field>
+        </form>
+        <br>
+        <mat-card-title >
+            Preço
+        </mat-card-title>
+        <form>
+                <mat-form-field appearance="fill">
+                <input matInput placeholder="ex(R$): 2.50" [(ngModel)]="produto.preco" name="preco">
+                </mat-form-field>
+        </form>     
+        <br>
+        <mat-card-title >
+            Unidades por Caixa
+        </mat-card-title>
+        <form>
+                <mat-form-field appearance="fill">
+                <input matInput placeholder="ex: 20" [(ngModel)]="produto.unidadePorCaixa" name="unidadePorCaixa">
+                </mat-form-field>
+        </form>     
+        <br>
+        <mat-card-title >
+            Peso por Unidade
+        </mat-card-title>
+        <form>
+                <mat-form-field appearance="fill">
+                <input matInput placeholder="ex (kg): 0.200" [(ngModel)]="produto.pesoPorUnidade" name="pesoPorUnidade">
+                </mat-form-field>
+        </form>     
+        <br>
+        <mat-card-title >
+            Validade
+        </mat-card-title>
+        <form>
+                <mat-form-field appearance="fill">
+                <input matInput placeholder="ex: 2020-07-01" [(ngModel)]="produto.validade" name="validade">
+                </mat-form-field>
+        </form>     
+        <br>
+        <mat-card-title >
+            Id da Categoria do Produto
+        </mat-card-title>
+        <form>
+                <mat-form-field appearance="fill">
+                <input matInput placeholder="ex: ASAFCVSAV" [(ngModel)]="produto.categoriaProdutoId" name="categoriaProdutoId">
+                </mat-form-field>
+        </form> 
+
+<button mat-raised-button (click) = "updateProduct()">
+    Salvar
+</button>
+
+<button mat-raised-button (click) = "cancel()">
+    Cancelar
+</button>
+</mat-card>
+</div>
+</fieldset>

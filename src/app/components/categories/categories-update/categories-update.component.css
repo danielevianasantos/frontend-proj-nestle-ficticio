@@ -1,0 +1,10 @@
+button {
+    margin: 20px 15px 8px 8px;
+    background-color: rgb(109, 183, 212);
+    color: silver;
+}
+mat-card {
+    display: flexbox;
+    flex-direction: column;
+    background: linear-gradient(rgb(107, 164, 187),transparent); 
+}

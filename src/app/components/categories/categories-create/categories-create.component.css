@@ -1,0 +1,18 @@
+button {
+    background-color: rgb(109, 183, 212);
+    margin: 10px 10px 10px 10px;
+    color: white;
+}
+mat-card {
+    display: flexbox;
+    flex-direction: column;
+    background: linear-gradient(rgb(107, 164, 187),transparent); 
+    color: rgb(56, 56, 56);
+}
+legend{
+    padding: 0.25em .25em .25em .25em;
+    color: rgb(24, 23, 23);
+}
+.spacefileds {
+    padding: 0.25em .25em .25em .25em;
+}
